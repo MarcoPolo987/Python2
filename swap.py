@@ -7,3 +7,4 @@ def swap_list(list):
     temp = list[mid]
     list[mid] = list[length-1]
     list[length-1] = temp
+    return list

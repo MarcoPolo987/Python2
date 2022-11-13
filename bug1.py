@@ -3,10 +3,9 @@ class Base:
 
     def __init__(self, xx, yy, ssize):
         # TODO: will need to fill this in
-        x = xx
-        y = y
-        size = ssize
-        print()
+        self.x = xx
+        self.y = yy
+        self.size = ssize
 
     def draw(self):
 
@@ -17,15 +16,13 @@ class Circle(Base):
 
     def __init__(self, x, y, size):
 
-        super().__init__()
+        super().__init__(x, y, size)
 
     def draw(self):
 
         return f"""
         ({self.x}, {self.y})
         {self.size}
-        3
-        CMPE 131: HW2a: Python
         , - ~ ~ ~ - ,
         , ' ' ,
         , ,

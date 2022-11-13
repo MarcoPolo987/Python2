@@ -6,12 +6,14 @@ def hi():
 
 
 def timeme(x):
-    print(f"Total time {x}")
+    t = time.time()
+    print(f"Total time {t}")
+    x()
 
 
 def main():
-    t = time.time
-    timeme(t)
+
+    timeme(hi)
 
 
 main()
